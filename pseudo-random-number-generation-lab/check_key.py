@@ -11,7 +11,7 @@ def main():
     decryptor = cipher.decryptor()
     guess = decryptor.update(ciphertext)+ decryptor.finalize()
 
-    print(guess.decode('utf-8'))
+    print(guess)
 
 if __name__ == "__main__":
     main()
